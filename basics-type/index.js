@@ -22,16 +22,41 @@ const incrementCounter = () => {
             type:INCREMENT
         }
 }
-const addUserj = () => {
+const addUser = () => {
     return {
-            type:ADD_USER
+            type:ADD_USER,
+            payload: {name:'shakil'}
         }
 }
 
 
 
+// 1. state
+// 2. dispatch action
+// 3. reducer
+// 4. store
 
 
+// create reducer for counter
+const counterReducer = (state = incrementCounter, action) => {
+    switch (action.type) {
+        case INCREMENT:
+            return {
+                ...state,
+                count: state.count + 1
+            }
+
+        case DECREMENT:
+            return {
+                ...state,
+                count: state.count - 1
+            }
+            
+    
+        default:
+          state;
+    }
+}
 
 
 
