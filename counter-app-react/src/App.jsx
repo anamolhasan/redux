@@ -9,6 +9,7 @@ function App() {
     <>
       <h2>Welcome to React Redux-toolkit</h2>
       <Counter />
+      <p>Anamol hasan</p>
     </>
   )
 }
