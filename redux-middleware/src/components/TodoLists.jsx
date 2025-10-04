@@ -29,6 +29,7 @@ const TodoLists = () => {
 
       <div>
         <input
+        value={text}
           onChange={(e) => setText(e.target.value)}
           name="name"
           type="text"
